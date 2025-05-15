@@ -4,7 +4,6 @@ This repository contains code for evaluating **uncertainty quantification (UQ)**
 
 ## **Table of Contents**
 - [Overview](#overview)
-- [Directory Structure](#directory-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Evaluation Metrics](#evaluation-metrics)
@@ -15,28 +14,14 @@ This repository contains code for evaluating **uncertainty quantification (UQ)**
 This project aims to quantify the uncertainty and diversity of generated images using **feature extraction, statistical metrics, and correlation analysis**. The main steps include:
 1. **Feature Extraction**: Using OpenAI's CLIP model to compute feature embeddings of images.
 2. **Diversity Calculation**: Computing **mean pairwise distance, variance, and entropy** of image embeddings.
-3. **Uncertainty Quantification**: Combining diversity metrics into an overall uncertainty score.
+3. **Diversity Quantification**: Combining diversity metrics into an overall uncertainty score.
 4. **Model Comparison**: Analyzing results across Stable Diffusion, DALL·E, and Imagen-3 models.
-
-## **Directory Structure**
-```
-ahamed14051-diverse-uq/
-│── 00-UQ-on-images-Stable-Diffusion.ipynb    # UQ analysis for Stable Diffusion
-│── 01-UQ-on-images-DALLE.ipynb               # UQ analysis for DALL·E
-│── 02-UQ-on-images-Imagen-3.ipynb            # UQ analysis for Imagen-3
-│── 11-Stable-diffusion-image.ipynb           # Image generation via Stable Diffusion
-│── 12-Dalle-image.ipynb                       # Image generation via DALL·E
-│── 13-Gemini-image.ipynb                      # Image generation via Gemini
-│── diversity.py                               # Diversity computation functions
-│── features.py                                # Feature extraction using CLIP and LPIPS
-│── visualize.py                               # Visualization tools for image comparison
-```
 
 ## **Installation**
 1. Clone this repository:
    ```sh
-   git clone https://github.com/YOUR_USERNAME/ahamed14051-diverse-uq.git
-   cd ahamed14051-diverse-uq
+   git clone https://github.com/anonymous4865/diva.git
+   cd diva
    ```
 2. Install dependencies:
    ```sh
